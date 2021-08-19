@@ -22,6 +22,6 @@ else:
 
 for move_filename in os.listdir('.'):
     if not move_filename.endswith(file_extension):
-        continue # CSVファイルでなければスキップ 
+        continue # file_extensionの拡張子ファイルでなければスキップ 
     shutil.move(move_filename, new_path)
     print(move_filename + "は" + new_path + "に移動されました")
